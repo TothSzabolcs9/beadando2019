@@ -1,0 +1,7 @@
+def alfanumerik(e):
+
+    kb=[]
+    nb=[]
+    paros=[]
+    paratlan=[]
+    nulla=[]
