@@ -1,1 +1,7 @@
-asdasd
+import datetime
+
+y=datetime.datetime(2018,11,6)
+x=datetime.datetime(2018,12,6)
+x1=x.strftime("%j")
+y1=y.strftime("%j")
+a=int(x1)-int(y1)
