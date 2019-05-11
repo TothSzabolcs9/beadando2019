@@ -1,1 +1,10 @@
 n=int(input("Adj meg egy szamot: "))
+j=1
+s=1
+while s<n-1:
+    def digit_sum(j):
+        num_str=str(j)
+        sum=0
+        for i in range(num_str):
+            sum+=int(num_str[i])
+        return sum
