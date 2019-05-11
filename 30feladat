@@ -1,7 +1,25 @@
-def alfanumerik(e):
+def alfanumerik(x):
 
     kb=[]
     nb=[]
     paros=[]
     paratlan=[]
     nulla=[]
+    for i in x:
+        if 65<=ord(i) and 90>=ord(i):
+            nb.append(i)
+        elif 90<=ord(i) and 122>=ord(i):
+            kb.append(i)
+        elif int(i)%2==0 and int(i)!=0:
+            paros.append(i)
+        elif int(i)%2!=0:
+            paratlan.append(i)
+        elif int(i)==0:
+            nulla.append(i)
+        kb.sort()
+        nb.sort()
+        paros.sort()
+        paratlan.sort()
+        return
+x=alfanumerik("aSG5agfTE640gsdg)
+print(x)
