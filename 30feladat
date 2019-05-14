@@ -1,25 +1,24 @@
-def alfanumerik(x):
-
-    kb=[]
-    nb=[]
+def alanumerik(e):
+    nagybetu=[]
+    kisbetu=[]
     paros=[]
     paratlan=[]
     nulla=[]
-    for i in x:
-        if 65<=ord(i) and 90>=ord(i):
-            nb.append(i)
-        elif 90<=ord(i) and 122>=ord(i):
-            kb.append(i)
-        elif int(i)%2==0 and int(i)!=0:
+    for i in e:
+        if(65<=ord(i) and 90>=ord(i)):
+            nagybetu.append(i)
+        elif (95<=ord(i) and 122>=ord(i)):
+            kisbetu.append(i)
+        elif(int(i)%2==0 and int(i)!=0):
             paros.append(i)
-        elif int(i)%2!=0:
+        elif (int(i)%2==1):
             paratlan.append(i)
-        elif int(i)==0:
+        elif(int(i)==0):
             nulla.append(i)
-        kb.sort()
-        nb.sort()
-        paros.sort()
-        paratlan.sort()
-        return
-x=alfanumerik("aSG5agfTE640gsdg)
-print(x)
+    kisbetu.sort()
+    nagybetu.sort()
+    paros.sort()
+    paratlan.sort()
+    return "".join(kisbetu+nagybetu+paros+paratlan+nulla)
+t=alanumerik("zJ4j0O3n9OLAk")
+print(t)
