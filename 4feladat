@@ -6,7 +6,7 @@ x1=x.strftime("%j")
 y1=y.strftime("%j")
 a=int(x1)-int(y1)
 if(a>0):
-    print(y1," ",x1," ",a)
+    print(a)
 else:
     y = datetime.datetime(2018, 12, 7)
     x = datetime.datetime(2018, 12, 31)
@@ -18,4 +18,4 @@ else:
     x1 = x.strftime("%j")
     y1 = y.strftime("%j")
     b = int(x1) - int(y1)
-    print(y1," ",x1," ",(a+b))
+    print(a+b)
