@@ -1,10 +1,21 @@
 import datetime
 
-y=datetime.datetime(2018,11,6)
+y=datetime.datetime(2018,12,7)
 x=datetime.datetime(2018,12,6)
 x1=x.strftime("%j")
 y1=y.strftime("%j")
 a=int(x1)-int(y1)
-if a>0:
+if(a>0):
     print(y1," ",x1," ",a)
 else:
+    y = datetime.datetime(2018, 12, 7)
+    x = datetime.datetime(2018, 12, 31)
+    x1 = x.strftime("%j")
+    y1 = y.strftime("%j")
+    a = int(x1) - int(y1)
+    y = datetime.datetime(2019, 1, 1)
+    x = datetime.datetime(2018, 12, 6)
+    x1 = x.strftime("%j")
+    y1 = y.strftime("%j")
+    b = int(x1) - int(y1)
+    print(y1," ",x1," ",(a+b))
