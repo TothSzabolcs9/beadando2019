@@ -11,7 +11,7 @@ def alanumerik(e):
             kisbetu.append(i)
         elif(int(i)%2==0 and int(i)!=0):
             paros.append(i)
-        elif (int(i)%2==1):
+        elif (int(i)%2!=0):
             paratlan.append(i)
         elif(int(i)==0):
             nulla.append(i)
